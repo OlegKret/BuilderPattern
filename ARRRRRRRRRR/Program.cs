@@ -221,7 +221,7 @@ namespace ARRRRRRRRRR
 
             public override void Close()
             {
-
+                sw.Close();
             }
         }
 
@@ -234,7 +234,7 @@ namespace ARRRRRRRRRR
             Array ar = new Array(Rows, Cols);
             Builder builder;
 
-            int choise = 3;
+            int choise = 2;
             switch (choise)
             {
                 case 1:
@@ -287,7 +287,7 @@ namespace ARRRRRRRRRR
                 default: throw new NullReferenceException("..............");
             }
             Director dir = new Director(builder);
-            dir.Construct("test3");
+            dir.Construct("test3.html");
         }
 
         }
